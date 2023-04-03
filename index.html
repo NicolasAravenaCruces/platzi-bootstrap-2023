@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>Hello, world!</title>
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <!--Navegador-->
+    <nav id="menu" class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="imagenes/logoblanco.png" alt="logo">
+          FriendlySolutions
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">La Conferencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Los oradores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">El lugar y la fecha</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Conviertete en orador</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link texto-alumbrado" href="#" data-bs-toggle="modal" data-bs-target="#modalCompra">Comprar Tickets</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Navegador-->
+    <!--Main carusel-->
+    <section id="main">
+    <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause=“false”>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imagenes/aluminio.jpg" class="d-block w-100" alt="imagen1">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/papel.jpg" class="d-block w-100" alt="imagen2">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/plastico.jpg" class="d-block w-100" alt="imagen3">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/vidrio.jpeg" class="d-block w-100" alt="imagen4">
+        </div>
+        <div class="overlay">
+          <div class="container">
+            <div class="row aling-items-center">
+              <div class="col-md-6 offset-md-6 text-center text-md-end">
+                <h1>Platzi conf bootstrap</h1>
+                <p class="d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Possimus provident sequi consectetur corporis earum! Nostrum beatae eum ratione tenetur atque sequi at, 
+                  ipsam distinctio eius porro corporis maiores consequuntur ab.
+                </p>
+                <a href="#" class="btn btn-outline-light">Quiero ser orador</a>
+                <button type="button" class="btn btn-platzi">Comprar Tickets</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!--Main carusel-->
+
+    <!--Cuerpo con cartas-->
+    <section id="cartas" class="mt-4 ">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center text-uppercase">
+            <small>Conoce a los</small>
+            <h2>Oradores</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 mb-4 col-sm-12 col-md-6">
+            <div class="card">
+              <img src="imagenes/nico.png" class="card-img-top" alt="miembro1">
+              <div class="card-body">
+                <div class="badges">
+                  <span class="badge bg-warning">JavaScript</span>
+                  <span class="badge bg-info text-dark">React</span>
+                </div>
+                <h5 class="card-title">Nico Aravena</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus iusto ea officiis quod harum maiores culpa quas deleniti ipsa, dolores ab placeat architecto minima libero nemo excepturi eligendi, laboriosam corporis.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mb-4 col-sm-12 col-md-6">
+            <div class="card">
+              <img src="imagenes/danic.png" class="card-img-top" alt="miembro1">
+              <div class="card-body">
+                <h5 class="card-title mb-0">Dani Corral</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus iusto ea officiis quod harum maiores culpa quas deleniti ipsa, dolores ab placeat architecto minima libero nemo excepturi eligendi, laboriosam corporis.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mb-4 col-sm-12 col-md-6">
+            <div class="card">
+              <img src="imagenes/danig.jpg" class="card-img-top" alt="miembro1">
+              <div class="card-body">
+                <h5 class="card-title mb-0">Dani Gomez</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus iusto ea officiis quod harum maiores culpa quas deleniti ipsa, dolores ab placeat architecto minima libero nemo excepturi eligendi, laboriosam corporis.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mb-4 col-sm-12 col-md-6">
+            <div class="card">
+              <img src="imagenes/susana.png" class="card-img-top" alt="miembro1">
+              <div class="card-body">
+                <h5 class="card-title mb-0">Susana Henriquez</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus iusto ea officiis quod harum maiores culpa quas deleniti ipsa, dolores ab placeat architecto minima libero nemo excepturi eligendi, laboriosam corporis.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mb-4 col-sm-12 col-md-6">
+            <div class="card">
+              <img src="imagenes/yata.jpg" class="card-img-top" alt="miembro1">
+              <div class="card-body">
+                <h5 class="card-title mb-0">Yatamis Spolman</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus iusto ea officiis quod harum maiores culpa quas deleniti ipsa, dolores ab placeat architecto minima libero nemo excepturi eligendi, laboriosam corporis.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+    <!--Cuerpo con cartas-->
+
+    <!--Reciclaje-->
+    <section id="recicla">
+      <div class="container-fluid mb-4">
+        <div class="row">
+          <div class="col-12 col-lg-6  px-0 py-0">
+            <img src="imagenes/aluminio.jpg" alt="aluminio">
+          </div>
+          <div class="col-12 col-lg-6 pt-4 pb-4">
+            <h2>Recicla Aluminio</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt recusandae, soluta fuga corrupti pariatur qui rerum tempora? Vel, doloribus? 
+            Neque placeat delectus eligendi sunt non excepturi deleniti qui dignissimos deserunt.</p>
+            <a class=" btn btn-outline-light" href="#">Aprende a reciclar Aluminio</a>
+          </div>    
+        </div>
+      </div>
+    </section>
+    <!--Reciclaje-->
+
+    <!--Formulario-->
+    <section id="form" class="pt-2 pb-2">
+      <div class="container">
+        <div class="row">
+          <div class="col text-uppercase text-center">
+            <small>recicla con</small>
+            <h2>FriendlySolutions</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            Registrate para reciclar!
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2 pt-2">
+            <div class="row">
+              <div class="form-label col-12 col-md-6">
+                <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+              </div>
+              <div class="form-label col-12 col-md-6">
+                <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+              </div>
+            </div>
+            <div class="form-label">
+              <div class="col">
+                <textarea name="text" class="form-control form-control-lg" placeholder="Sobre qué quieres hablar?"></textarea>
+                <small class="form-text text-muted">
+                  Recuerda incluir un titulo para tu charla
+                </small>
+             </div> 
+            </div>
+            <div class="form-label">
+              <div class="col">
+                <button type="button" class="btn btn-platzi col-12">
+                  Enviar
+                </button>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+
+
+
+    <!--Formulario-->
+    
+
+
+    <!--Footer-->
+    <footer id="footer" class="pb-4 pt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-sm-4">
+            <a href="#">Preguntas frecuentes</a>
+          </div>
+          <div class="col-6 col-sm-4">
+            <a href="#">Conferencia</a>
+          </div> 
+          <div class="col-6 col-sm-4">
+            <a href="#">Links</a>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-sm-4">
+              <a href="#">Contactanos</a>
+            </div>
+            <div class="col-6 col-sm-4">
+              <a href="#">Termino y condiciones</a>
+            </div> 
+            <div class="col-6 col-sm-4">
+              <a href="#">Canales</a>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-6 col-sm-4">
+            <a href="#">Prensa</a>
+          </div> 
+          <div class="col-6 col-sm-4">
+            <a href="#">Estudiantes</a>
+          </div> 
+          <div class="col-6 col-sm-4">
+            <a href="#">Chinas cochinas</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--Footer-->
+
+    <!--modal-->
+    <div class="modal fade" id="modalCompra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Comprar ticket</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-label">
+                <div class="col">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="alert alert-warning" role="alert">
+              Recibiras un correo de confirmacion!
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-platzi">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+
+  </body>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</html>
+
